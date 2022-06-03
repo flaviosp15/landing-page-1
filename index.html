@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="I coded this landpage to improve my skills in HTML, CSS and jQuery.">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <title>PROJECT: Landing Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="div--logo">
+      <svg id="logo-55" width="180" height="60" viewBox="0 0 168 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M49.2775 28.9524H61.2295V25.3524H53.5255V11.7924H49.2775V28.9524Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M68.3107 26.5524C66.6067 26.5524 65.7187 25.0644 65.7187 22.8324C65.7187 20.6004 66.6067 19.0884 68.3107 19.0884C70.0147 19.0884 70.9267 20.6004 70.9267 22.8324C70.9267 25.0644 70.0147 26.5524 68.3107 26.5524ZM68.3347 29.3364C72.2947 29.3364 74.8867 26.5284 74.8867 22.8324C74.8867 19.1364 72.2947 16.3284 68.3347 16.3284C64.3987 16.3284 61.7587 19.1364 61.7587 22.8324C61.7587 26.5284 64.3987 29.3364 68.3347 29.3364Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M81.7411 33.2004C83.5651 33.2004 85.1731 32.7924 86.2531 31.8324C87.2371 30.9444 87.8851 29.6004 87.8851 27.7524V16.6644H84.1411V17.9844H84.0931C83.3731 16.9524 82.2691 16.3044 80.6371 16.3044C77.5891 16.3044 75.4771 18.8484 75.4771 22.4484C75.4771 26.2164 78.0451 28.2804 80.8051 28.2804C82.2931 28.2804 83.2291 27.6804 83.9491 26.8644H84.0451V28.0884C84.0451 29.5764 83.3491 30.4404 81.6931 30.4404C80.3971 30.4404 79.7491 29.8884 79.5331 29.2404H75.7411C76.1251 31.8084 78.3571 33.2004 81.7411 33.2004ZM81.7171 25.3764C80.2531 25.3764 79.2931 24.1764 79.2931 22.3284C79.2931 20.4564 80.2531 19.2564 81.7171 19.2564C83.3491 19.2564 84.2131 20.6484 84.2131 22.3044C84.2131 24.0324 83.4211 25.3764 81.7171 25.3764Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M95.5835 26.5524C93.8795 26.5524 92.9915 25.0644 92.9915 22.8324C92.9915 20.6004 93.8795 19.0884 95.5835 19.0884C97.2875 19.0884 98.1995 20.6004 98.1995 22.8324C98.1995 25.0644 97.2875 26.5524 95.5835 26.5524ZM95.6075 29.3364C99.5675 29.3364 102.159 26.5284 102.159 22.8324C102.159 19.1364 99.5675 16.3284 95.6075 16.3284C91.6715 16.3284 89.0315 19.1364 89.0315 22.8324C89.0315 26.5284 91.6715 29.3364 95.6075 29.3364Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M103.302 28.9524H107.214V16.6644H103.302V28.9524ZM103.302 14.9604H107.214V11.7924H103.302V14.9604Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M108.911 33.0084H112.823V27.6804H112.871C113.639 28.7124 114.767 29.3364 116.351 29.3364C119.567 29.3364 121.703 26.7924 121.703 22.8084C121.703 19.1124 119.711 16.3044 116.447 16.3044C114.767 16.3044 113.567 17.0484 112.727 18.1524H112.655V16.6644H108.911V33.0084ZM115.343 26.3124C113.663 26.3124 112.703 24.9444 112.703 22.9524C112.703 20.9604 113.567 19.4484 115.271 19.4484C116.951 19.4484 117.743 20.8404 117.743 22.9524C117.743 25.0404 116.831 26.3124 115.343 26.3124Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M128.072 29.3364C131.288 29.3364 133.664 27.9444 133.664 25.2564C133.664 22.1124 131.12 21.5604 128.96 21.2004C127.4 20.9124 126.008 20.7924 126.008 19.9284C126.008 19.1604 126.752 18.8004 127.712 18.8004C128.792 18.8004 129.536 19.1364 129.68 20.2404H133.28C133.088 17.8164 131.216 16.3044 127.736 16.3044C124.832 16.3044 122.432 17.6484 122.432 20.2404C122.432 23.1204 124.712 23.6964 126.848 24.0564C128.48 24.3444 129.968 24.4644 129.968 25.5684C129.968 26.3604 129.224 26.7924 128.048 26.7924C126.752 26.7924 125.936 26.1924 125.792 24.9684H122.096C122.216 27.6804 124.472 29.3364 128.072 29.3364Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M138.978 29.3124C140.682 29.3124 141.762 28.6404 142.65 27.4404H142.722V28.9524H146.466V16.6644H142.554V23.5284C142.554 24.9924 141.738 26.0004 140.394 26.0004C139.146 26.0004 138.546 25.2564 138.546 23.9124V16.6644H134.658V24.7284C134.658 27.4644 136.146 29.3124 138.978 29.3124Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M148.168 28.9524H152.08V22.0644C152.08 20.6004 152.8 19.5684 154.024 19.5684C155.2 19.5684 155.752 20.3364 155.752 21.6564V28.9524H159.664V22.0644C159.664 20.6004 160.36 19.5684 161.608 19.5684C162.784 19.5684 163.336 20.3364 163.336 21.6564V28.9524H167.248V20.9604C167.248 18.2004 165.856 16.3044 163.072 16.3044C161.488 16.3044 160.168 16.9764 159.208 18.4644H159.16C158.536 17.1444 157.312 16.3044 155.704 16.3044C153.928 16.3044 152.752 17.1444 151.984 18.4164H151.912V16.6644H148.168V28.9524Z" class="cneutral" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M25.4099 1.97689L21.4769 0.923031L18.1625 13.2926L15.1702 2.12527L11.2371 3.17913L14.4701 15.2446L6.41746 7.19201L3.53827 10.0712L12.371 18.904L1.37124 15.9566L0.317383 19.8896L12.336 23.11C12.1984 22.5165 12.1256 21.8981 12.1256 21.2627C12.1256 16.7651 15.7716 13.1191 20.2692 13.1191C24.7668 13.1191 28.4128 16.7651 28.4128 21.2627C28.4128 21.894 28.3409 22.5086 28.205 23.0986L39.1277 26.0253L40.1815 22.0923L28.1151 18.8591L39.1156 15.9115L38.0617 11.9785L25.9958 15.2115L34.0484 7.15895L31.1692 4.27976L22.459 12.99L25.4099 1.97689Z" class="ccustom" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M28.1943 23.1444C27.8571 24.57 27.1452 25.8507 26.1684 26.8768L34.0814 34.7899L36.9606 31.9107L28.1943 23.1444Z" class="ccustom" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M26.0884 26.9596C25.0998 27.9693 23.8505 28.7228 22.4495 29.1111L25.3289 39.8571L29.2619 38.8032L26.0884 26.9596Z" class="ccustom" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M22.3026 29.1504C21.6526 29.3175 20.9713 29.4063 20.2692 29.4063C19.517 29.4063 18.7886 29.3043 18.0971 29.1134L15.2151 39.8692L19.1481 40.923L22.3026 29.1504Z" class="ccustom" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M17.9581 29.0737C16.5785 28.6661 15.3514 27.903 14.383 26.8904L6.45052 34.8229L9.32971 37.7021L17.9581 29.0737Z" class="ccustom" fill="#ac00bb" stop-color="#ac00bb"></path>
+        <path d="M14.3168 26.8203C13.365 25.8013 12.6717 24.5377 12.3417 23.1341L1.38334 26.0704L2.43719 30.0034L14.3168 26.8203Z" class="ccustom" fill="#ac00bb" stop-color="#ac00bb">
+        </path>
+      </svg>
+      <i class='bx bx-menu'></i>
+    </div>
+    <!-- NAVIGATION BAR -->
+    <nav class="nav">
+      <ul class="nav--links">
+        <li><a class="link" href="#home">Home</a></li>
+        <li><a class="link" href="#features">Features</a></li>
+        <li><a class="link" href="#pricing">Pricing</a></li>
+        <li><a class="link" href="#contactus">Contact</a></li>
+        <li><a class="link" href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="section--hero section">
+      <div class="container">
+        <div class="d-flex-column">
+          <p class="text1--hero">
+            <span class="text2--hero">Join Meet Up</span>Pure optio molestias
+            accusamus similique omnis.
+          </p>
+          <h1 class="title--hero">Lorem Ipsum <br>Dolor Sit Amet</h1>
+          <div class="box--email-input">
+            <input class="input--email" type="text" placeholder="Email Adress" required /><button class="btn--email">Get Started</button>
+          </div>
+          <p class="text3--hero">Voluptates possimus numquam optio!</p>
+        </div>
+    </section>
+    </div>
+    <!-- FEATURES SECTION -->
+    <section id="features" class="section--features section">
+      <h2 class="section--title">FEATURES</h2>
+      <div class="container">
+        <div class="card--box">
+          <div class="card">
+            <div class="box--icon">
+              <i class='bx bx-hdd'></i>
+            </div>
+            <h3 class="card--title">Storage</h3>
+            <p class="card--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sit corrupti provident, labore nam error voluptas neque quos possimus officia quidem a sapiente? Beatae nesciunt totam atque illo ab culpa!</p>
+            <a href="#index" class="card--link">Read</a>
+          </div>
+          <div class="card">
+            <div class="box--icon">
+              <i class='bx bx-chip'></i>
+            </div>
+            <h3 class="card--title">Compute</h3>
+            <p class="card--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sit corrupti provident, labore nam error voluptas neque quos possimus officia quidem a sapiente? Beatae nesciunt totam atque illo ab culpa!</p>
+            <a href="#index" class="card--link">Read</a>
+          </div>
+          <div class="card">
+            <div class="box--icon">
+              <i class='bx bx-data'></i>
+            </div>
+            <h3 class="card--title">Database</h3>
+            <p class="card--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sit corrupti provident, labore nam error voluptas neque quos possimus officia quidem a sapiente? Beatae nesciunt totam atque illo ab culpa!</p>
+            <a href="#index" class="card--link">Read</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CAROUSEL SECTION -->
+    <section class="section--carousel section">
+      <ul class="slider">
+        <li class="item--list">
+          <h1>Cumque consectetur neque laboriosam!</h1>
+          <p>Modi fuga iusto debitis placeat aperiam asperiores repudiandae nostrum blanditiis veniam possimus tempora.</p>
+          <a href="#index" class="link">BUY NOW</a>
+        </li>
+        <li class="item--list">
+          <h1>Laboriosam consectetur neque cumque!</h1>
+          <p>Modi fuga iusto debitis placeat aperiam asperiores repudiandae nostrum blanditiis veniam possimus tempora.</p>
+          <a href="#index" class="link">BUY NOW</a>
+        </li>
+        <li class="item--list">
+          <h1>Neque consectetur cumque laboriosam!</h1>
+          <p>Modi fuga iusto debitis placeat aperiam asperiores repudiandae nostrum blanditiis veniam possimus tempora.</p>
+          <a href="#index" class="link">BUY NOW</a>
+        </li>
+      </ul>
+    </section>
+    <!-- PRICE SECTION -->
+    <section id="pricing" class="section--plan section">
+      <h2 class="section--title">PRICE</h2>
+      <div class="container">
+        <div class="left--box half-box">
+          <h2>Perferendis Prices</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit quaerat dicta laudantium, aliquid enim ut exercitationem autem.</p>
+          <div class="box--logos">
+            <h4>Companies trusts us</h4>
+            <svg id="logo-33" viewBox="0 0 160 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M26.6046 3.72414C25.1108 2.23101 22.6895 2.2315 21.1964 3.72525L8.73506 16.1917L8.72444 16.1886L8.68506 16.1928C8.70128 16.2006 8.7172 16.2083 8.7328 16.2161C6.54682 16.4451 5.61934 17.102 5.60884 17.9456C5.61254 18.2594 5.74129 18.5983 5.97778 18.9501L5.96641 18.9615C7.95369 21.9588 17.7986 25.9127 24.7636 23.2338C19.5436 25.8438 7.25026 26.3611 3.63951 21.2935C2.85537 22.1418 2.52729 23.2566 2.65084 24.3279C3.6047 29.5853 14.2689 31.0196 24.9332 23.4023L27.2409 25.71C24.3693 28.6602 20.1276 45.7967 26.4303 43.1803C26.5798 43.0788 26.7067 42.988 26.8793 42.8574L27.1602 42.5922C27.144 42.5962 27.1279 42.6 27.1119 42.6038L43.9919 26.6681C45.5592 25.1884 45.5947 22.7065 44.0702 21.1826L26.6046 3.72414ZM24.7664 8.91743L25.3433 6.60974L25.9202 8.91743L27.651 9.49436L25.9202 10.0713L25.3433 12.379L24.7664 10.0713L23.0356 9.49436L24.7664 8.91743ZM17.6255 16.4508L18.0101 14.9123L18.3947 16.4508L19.5486 16.8354L18.3947 17.22L18.0101 18.7585L17.6255 17.22L16.4717 16.8354L17.6255 16.4508ZM31.0211 29.4277L30.6365 30.9661L29.4827 31.3508L30.6365 31.7354L31.0211 33.2738L31.4057 31.7354L32.5596 31.3508L31.4057 30.9661L31.0211 29.4277Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M54.898 12.2755H51.3159V28.4387H61.2323V25.2716H54.898V12.2755Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M61.5744 22.9563C61.5744 26.4074 63.8897 28.7008 67.3844 28.7008C70.8574 28.7008 73.1726 26.4074 73.1726 22.9563C73.1726 19.5052 70.8574 17.19 67.3844 17.19C63.8897 17.19 61.5744 19.5052 61.5744 22.9563ZM64.96 22.9345C64.96 21.2963 65.921 20.2042 67.3844 20.2042C68.826 20.2042 69.7871 21.2963 69.7871 22.9345C69.7871 24.5945 68.826 25.6866 67.3844 25.6866C65.921 25.6866 64.96 24.5945 64.96 22.9345Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M73.7137 22.7816C73.7137 26.0797 75.8543 28.3076 78.8903 28.3076C80.3538 28.3076 81.6206 27.7834 82.254 26.9316V28.4387C82.254 29.9458 81.3148 30.9506 79.6548 30.9506C78.1695 30.9506 77.143 30.2516 77.0774 29.0066H73.6701C73.9758 31.999 76.2911 34.0085 79.4582 34.0085C83.1933 34.0085 85.5522 31.584 85.5522 27.7397V17.5176H82.5161L82.3414 18.6315C81.7298 17.736 80.4411 17.1463 78.9559 17.1463C75.898 17.1463 73.7137 19.4397 73.7137 22.7816ZM77.1211 22.6942C77.1211 21.1216 78.1696 20.0731 79.5019 20.0731C81.0527 20.0731 82.1885 21.0997 82.1885 22.6942C82.1885 24.2887 81.0746 25.3808 79.5238 25.3808C78.1914 25.3808 77.1211 24.2887 77.1211 22.6942Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M86.5326 22.9563C86.5326 26.4074 88.8478 28.7008 92.3426 28.7008C95.8155 28.7008 98.1308 26.4074 98.1308 22.9563C98.1308 19.5052 95.8155 17.19 92.3426 17.19C88.8478 17.19 86.5326 19.5052 86.5326 22.9563ZM89.9181 22.9345C89.9181 21.2963 90.8792 20.2042 92.3426 20.2042C93.7842 20.2042 94.7452 21.2963 94.7452 22.9345C94.7452 24.5945 93.7842 25.6866 92.3426 25.6866C90.8792 25.6866 89.9181 24.5945 89.9181 22.9345Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M101.031 15.8139C102.079 15.8139 102.931 14.9621 102.931 13.8918C102.931 12.8215 102.079 11.9915 101.031 11.9915C99.9606 11.9915 99.1087 12.8215 99.1087 13.8918C99.1087 14.9621 99.9606 15.8139 101.031 15.8139ZM99.3271 28.4387H102.713V17.5176H99.3271V28.4387Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M104.683 33.6808H108.003V27.3466C108.637 28.1766 110.078 28.7445 111.586 28.7445C114.84 28.7445 116.806 26.2545 116.718 22.8034C116.631 19.2868 114.6 17.1681 111.564 17.1681C110.013 17.1681 108.55 17.8452 107.938 18.85L107.763 17.5176H104.683V33.6808ZM108.069 22.9781C108.069 21.34 109.161 20.2479 110.734 20.2479C112.328 20.2479 113.333 21.3618 113.333 22.9781C113.333 24.5945 112.328 25.7084 110.734 25.7084C109.161 25.7084 108.069 24.6163 108.069 22.9781Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M117.077 24.9876C117.164 27.1937 118.912 28.7226 121.664 28.7226C124.307 28.7226 126.142 27.3247 126.142 25.075C126.142 23.4587 125.18 22.3884 123.389 21.9516L121.445 21.471C120.746 21.2963 120.31 21.1216 120.31 20.5537C120.31 19.9858 120.768 19.6144 121.445 19.6144C122.21 19.6144 122.712 20.1168 122.69 20.8595H125.727C125.639 18.5879 123.914 17.1681 121.511 17.1681C119.086 17.1681 117.274 18.6097 117.274 20.7939C117.274 22.2574 118.082 23.4587 120.244 24.0266L122.166 24.5289C122.734 24.6818 122.974 24.9439 122.974 25.3153C122.974 25.8613 122.472 26.2108 121.62 26.2108C120.637 26.2108 120.113 25.7521 120.113 24.9876H117.077Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M131.29 28.7226C132.623 28.7226 133.955 28.1111 134.632 27.2155L134.851 28.4387H138.018V17.5176H134.654V23.1966C134.654 24.8347 134.173 25.7303 132.623 25.7303C131.421 25.7303 130.635 25.1842 130.635 23.1529V17.5176H127.271V24.376C127.271 26.9753 128.713 28.7226 131.29 28.7226Z" class="ccustom" fill="#4845D2"></path>
+              <path d="M143.352 28.4387V22.4758C143.352 20.641 144.335 20.1168 145.296 20.1168C146.366 20.1168 147.065 20.7721 147.065 22.1263V28.4387H150.385V22.4758C150.385 20.6192 151.346 20.095 152.307 20.095C153.377 20.095 154.098 20.7502 154.098 22.1263V28.4387H157.375V21.2963C157.375 18.8063 156.064 17.1463 153.246 17.1463C151.674 17.1463 150.385 17.9108 149.817 19.0902C149.162 17.9108 148.026 17.1463 146.213 17.1463C145.012 17.1463 143.898 17.6923 143.243 18.566L143.112 17.5176H139.966V28.4387H143.352Z" class="ccustom" fill="#4845D2"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M45.2918 5.25128C41.6831 5.25128 38.2608 6.85419 35.9505 9.62649L27.7315 19.4894L32.4775 12.3703L24.5995 15.7466C23.599 16.1754 23.348 17.4789 24.1176 18.2486L26.6528 20.7837L25.3584 22.337L28.2061 25.1846L29.7593 23.8902L32.2945 26.4254C33.0641 27.195 34.3677 26.944 34.7964 25.9436L38.1727 18.0656L31.0537 22.8116L40.9166 14.5925C43.6889 12.2823 45.2918 8.86 45.2918 5.25128ZM37.4609 13.0824C38.2472 13.8687 39.5221 13.8687 40.3085 13.0824C41.0948 12.296 41.0948 11.0211 40.3085 10.2348C39.5221 9.44841 38.2472 9.44841 37.4609 10.2348C36.6745 11.0211 36.6745 12.296 37.4609 13.0824Z" class="ccompli2" fill="#A3A2FF"></path>
+              <path opacity="0.6" d="M3.54793 21.1609C5.43339 27.6207 16.8966 27.2839 24.7614 23.2348C19.495 25.8664 7.03695 26.369 3.54793 21.1609Z" fill="#424242"></path>
+              <path opacity="0.6" d="M26.4303 43.1803C21.1195 45.3849 23.2955 33.5645 25.8299 28.0245C23.9825 32.9487 22.4055 43.8038 27.1602 42.5922L26.8793 42.8574C26.7067 42.988 26.5798 43.0788 26.4303 43.1803Z" fill="#424242">
+              </path>
+            </svg>
+            <svg id="logo-52" viewBox="0 0 170 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M51.2775 29.3232H63.2295V25.7232H55.5255V12.1632H51.2775V29.3232Z" class="cneutral" fill="#2F234F"></path>
+              <path d="M70.3106 26.9232C68.6066 26.9232 67.7186 25.4352 67.7186 23.2032C67.7186 20.9712 68.6066 19.4592 70.3106 19.4592C72.0146 19.4592 72.9266 20.9712 72.9266 23.2032C72.9266 25.4352 72.0146 26.9232 70.3106 26.9232ZM70.3346 29.7072C74.2946 29.7072 76.8866 26.8992 76.8866 23.2032C76.8866 19.5072 74.2946 16.6992 70.3346 16.6992C66.3986 16.6992 63.7586 19.5072 63.7586 23.2032C63.7586 26.8992 66.3986 29.7072 70.3346 29.7072Z" class="cneutral" fill="#2F234F"></path>
+              <path d="M83.741 33.5712C85.565 33.5712 87.173 33.1632 88.253 32.2032C89.237 31.3152 89.885 29.9712 89.885 28.1232V17.0352H86.141V18.3552H86.093C85.373 17.3232 84.269 16.6752 82.637 16.6752C79.589 16.6752 77.477 19.2192 77.477 22.8192C77.477 26.5872 80.045 28.6512 82.805 28.6512C84.293 28.6512 85.229 28.0512 85.949 27.2352H86.045V28.4592C86.045 29.9472 85.349 30.8112 83.693 30.8112C82.397 30.8112 81.749 30.2592 81.533 29.6112H77.741C78.125 32.1792 80.357 33.5712 83.741 33.5712ZM83.717 25.7472C82.253 25.7472 81.293 24.5472 81.293 22.6992C81.293 20.8272 82.253 19.6272 83.717 19.6272C85.349 19.6272 86.213 21.0192 86.213 22.6752C86.213 24.4032 85.421 25.7472 83.717 25.7472Z" class="cneutral" fill="#2F234F"></path>
+              <path d="M97.5834 26.9232C95.8794 26.9232 94.9914 25.4352 94.9914 23.2032C94.9914 20.9712 95.8794 19.4592 97.5834 19.4592C99.2874 19.4592 100.199 20.9712 100.199 23.2032C100.199 25.4352 99.2874 26.9232 97.5834 26.9232ZM97.6074 29.7072C101.567 29.7072 104.159 26.8992 104.159 23.2032C104.159 19.5072 101.567 16.6992 97.6074 16.6992C93.6714 16.6992 91.0314 19.5072 91.0314 23.2032C91.0314 26.8992 93.6714 29.7072 97.6074 29.7072Z" class="cneutral" fill="#2F234F"></path>
+              <path d="M105.302 29.3232H109.214V17.0352H105.302V29.3232ZM105.302 15.3312H109.214V12.1632H105.302V15.3312Z" class="cneutral" fill="#2F234F"></path>
+              <path d="M110.911 33.3792H114.823V28.0512H114.871C115.639 29.0832 116.767 29.7072 118.351 29.7072C121.567 29.7072 123.703 27.1632 123.703 23.1792C123.703 19.4832 121.711 16.6752 118.447 16.6752C116.767 16.6752 115.567 17.4192 114.727 18.5232H114.655V17.0352H110.911V33.3792ZM117.343 26.6832C115.663 26.6832 114.703 25.3152 114.703 23.3232C114.703 21.3312 115.567 19.8192 117.271 19.8192C118.951 19.8192 119.743 21.2112 119.743 23.3232C119.743 25.4112 118.831 26.6832 117.343 26.6832Z" class="cneutral" fill="#2F234F"></path>
+              <path d="M130.072 29.7072C133.288 29.7072 135.664 28.3152 135.664 25.6272C135.664 22.4832 133.12 21.9312 130.96 21.5712C129.4 21.2832 128.008 21.1632 128.008 20.2992C128.008 19.5312 128.752 19.1712 129.712 19.1712C130.792 19.1712 131.536 19.5072 131.68 20.6112H135.28C135.088 18.1872 133.216 16.6752 129.736 16.6752C126.832 16.6752 124.432 18.0192 124.432 20.6112C124.432 23.4912 126.712 24.0672 128.848 24.4272C130.48 24.7152 131.968 24.8352 131.968 25.9392C131.968 26.7312 131.224 27.1632 130.048 27.1632C128.752 27.1632 127.936 26.5632 127.792 25.3392H124.096C124.216 28.0512 126.472 29.7072 130.072 29.7072Z" class="cneutral" fill="#2F234F"></path>
+              <path d="M140.978 29.6832C142.682 29.6832 143.762 29.0112 144.65 27.8112H144.722V29.3232H148.466V17.0352H144.554V23.8992C144.554 25.3632 143.738 26.3712 142.394 26.3712C141.146 26.3712 140.546 25.6272 140.546 24.2832V17.0352H136.658V25.0992C136.658 27.8352 138.146 29.6832 140.978 29.6832Z" class="cneutral" fill="#2F234F"></path>
+              <path d="M150.168 29.3232H154.08V22.4352C154.08 20.9712 154.8 19.9392 156.024 19.9392C157.2 19.9392 157.752 20.7072 157.752 22.0272V29.3232H161.664V22.4352C161.664 20.9712 162.36 19.9392 163.608 19.9392C164.784 19.9392 165.336 20.7072 165.336 22.0272V29.3232H169.248V21.3312C169.248 18.5712 167.856 16.6752 165.072 16.6752C163.488 16.6752 162.168 17.3472 161.208 18.8352H161.16C160.536 17.5152 159.312 16.6752 157.704 16.6752C155.928 16.6752 154.752 17.5152 153.984 18.7872H153.912V17.0352H150.168V29.3232Z" class="cneutral" fill="#2F234F"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1014 40.3232C31.1472 40.3232 40.1014 31.3689 40.1014 20.3232C40.1014 9.27754 31.1472 0.323242 20.1014 0.323242C9.05573 0.323242 0.10144 9.27754 0.10144 20.3232C0.10144 31.3689 9.05573 40.3232 20.1014 40.3232ZM23.1884 15.7758C24.8932 14.0709 24.8932 11.3068 23.1884 9.6019C21.4835 7.89702 18.7194 7.89702 17.0145 9.6019C15.3097 11.3068 15.3097 14.0709 17.0145 15.7758L20.1014 18.8627L23.1884 15.7758ZM24.6489 23.4102C26.3538 25.1151 29.1179 25.1151 30.8228 23.4102C32.5276 21.7053 32.5276 18.9412 30.8228 17.2363C29.1179 15.5315 26.3538 15.5315 24.6489 17.2363L21.562 20.3233L24.6489 23.4102ZM23.1884 31.0446C24.8932 29.3397 24.8932 26.5756 23.1884 24.8707L20.1014 21.7838L17.0145 24.8707C15.3097 26.5756 15.3097 29.3397 17.0145 31.0446C18.7194 32.7495 21.4835 32.7495 23.1884 31.0446ZM9.38007 23.4102C7.67523 21.7053 7.67523 18.9412 9.38007 17.2363C11.085 15.5315 13.8491 15.5315 15.554 17.2363L18.6409 20.3233L15.554 23.4102C13.8491 25.1151 11.085 25.1151 9.38007 23.4102Z" class="ccustom" fill="#7F57F1">
+              </path>
+            </svg>
+            <svg id="logo-28" viewBox="0 0 161 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M54.196 29H57.715V12.44H54.196V29Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M64.9338 29.368C68.6138 29.368 71.0288 26.999 71.0288 22.813C71.0288 18.765 68.6828 16.235 64.9338 16.235C61.2538 16.235 58.8618 18.604 58.8618 22.813C58.8618 26.884 61.1848 29.368 64.9338 29.368ZM64.9338 26.516C63.3468 26.516 62.4728 25.205 62.4728 22.813C62.4728 20.398 63.3238 19.087 64.9338 19.087C66.5438 19.087 67.4178 20.421 67.4178 22.813C67.4178 25.228 66.5668 26.516 64.9338 26.516Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M76.7538 29.023C78.0878 29.023 79.1918 28.471 79.9738 27.39V29.46C79.9738 31.185 79.1228 31.76 77.8578 31.76C76.6388 31.76 75.6958 31.162 75.5578 30.058H72.0388C72.4758 33.071 74.7528 34.451 77.9038 34.451C81.1468 34.451 83.4928 32.726 83.4928 29.414V16.626H79.9738V17.776C79.2148 16.764 78.1338 16.235 76.7538 16.235C73.6718 16.235 71.6708 18.535 71.6708 22.652C71.6708 26.585 73.6258 29.023 76.7538 29.023ZM77.6048 26.171C76.0868 26.171 75.2818 24.906 75.2818 22.652C75.2818 20.329 76.0868 19.087 77.6048 19.087C79.1458 19.087 79.9738 20.352 79.9738 22.629C79.9738 24.929 79.1688 26.171 77.6048 26.171Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M90.7315 29.368C94.4115 29.368 96.8265 26.999 96.8265 22.813C96.8265 18.765 94.4805 16.235 90.7315 16.235C87.0515 16.235 84.6595 18.604 84.6595 22.813C84.6595 26.884 86.9825 29.368 90.7315 29.368ZM90.7315 26.516C89.1445 26.516 88.2705 25.205 88.2705 22.813C88.2705 20.398 89.1215 19.087 90.7315 19.087C92.3415 19.087 93.2155 20.421 93.2155 22.813C93.2155 25.228 92.3645 26.516 90.7315 26.516Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M97.9976 15.384H101.517V12.44H97.9976V15.384ZM97.9976 29H101.517V16.626H97.9976V29Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M106.711 34.083V27.758C107.447 28.816 108.505 29.368 109.816 29.368C112.967 29.368 115.014 26.999 115.014 22.79C115.014 18.742 113.013 16.235 109.816 16.235C108.528 16.235 107.47 16.833 106.711 17.914V16.626H103.192V34.083H106.711ZM109.08 19.087C110.575 19.087 111.403 20.398 111.403 22.79C111.403 25.205 110.598 26.516 109.08 26.516C107.539 26.516 106.711 25.182 106.711 22.79C106.711 20.398 107.516 19.087 109.08 19.087Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M119.24 20.053C119.24 19.386 119.838 18.926 120.758 18.926C122 18.926 122.736 19.455 122.943 20.72H126.439C126.094 17.592 123.84 16.235 120.873 16.235C117.561 16.235 115.882 18.167 115.882 20.237C115.882 25.205 123.38 23.066 123.38 25.458C123.38 26.217 122.759 26.7 121.517 26.7C120.206 26.7 119.263 26.079 119.102 24.929H115.583C116.043 27.988 118.297 29.368 121.425 29.368C124.645 29.368 126.899 27.689 126.899 25.251C126.899 20.352 119.24 22.491 119.24 20.053Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M135.569 23.733C135.569 25.32 134.695 26.516 133.338 26.516C132.096 26.516 131.498 25.734 131.498 24.147V16.626H127.979V24.86C127.979 27.942 129.704 29.368 132.05 29.368C133.545 29.368 134.764 28.724 135.569 27.344V29H139.088V16.626H135.569V23.733Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M140.788 29H144.307V21.893C144.307 20.306 145.112 19.087 146.331 19.087C147.458 19.087 148.01 19.892 148.01 21.456V29H151.506V21.893C151.506 20.306 152.334 19.087 153.553 19.087C154.68 19.087 155.209 19.892 155.209 21.456V29H158.728V20.743C158.728 17.684 157.026 16.235 154.726 16.235C153.185 16.235 151.874 16.879 151.023 18.282C150.402 16.902 149.16 16.235 147.688 16.235C146.262 16.235 145.089 16.856 144.307 18.19V16.626H140.788V29Z" class="ccustom" fill="#55AE36"></path>
+              <path d="M40.8504 34.0526C44.6624 30.6486 47 26.0548 47 21C47 10.5066 36.9264 2 24.5 2C12.0736 2 2 10.5066 2 21C2 31.4934 12.0736 40 24.5 40C28.0253 40 31.3613 39.3154 34.3316 38.0949C37.8208 40.2486 42.0957 41.7967 46.8169 41.4702C44.3227 40.8362 42.1773 38.2679 40.8504 34.0526Z" class="ccompli2" fill="#B6EFA2"></path>
+              <path d="M41 21C41 28.732 33.6127 35 24.5 35C15.3873 35 8 28.732 8 21C8 13.268 15.3873 7 24.5 7C33.6127 7 41 13.268 41 21Z" class="ccompli1" fill="#88E169"></path>
+              <path d="M35 21C35 25.9706 30.299 30 24.5 30C18.701 30 14 25.9706 14 21C14 16.0294 18.701 12 24.5 12C30.299 12 35 16.0294 35 21Z" class="ccustom" fill="#55AE36">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div class="right--box half-box">
+          <div class="card--price card--free">
+            <p class="plan">Free</p>
+            <p class="price">$<span>0</span>/mo</p>
+            <p class="text--plan"><i class='bx bx-check'></i>1 user</p>
+            <p class="text--plan"><i class='bx bx-check'></i>100 visitors/month</p>
+            <p class="text--plan"><i class='bx bx-check'></i>1 website</p>
+            <p class="text--plan"><i class='bx bx-check'></i>24x7 support</p>
+            <p class="text--plan"><i class='bx bx-x'></i>third party integration</p>
+            <button class="signup signup--free" type="button">SIGN UP</button>
+          </div>
+          <div class="card--price card--pro">
+            <p class="plan">Pro</p>
+            <p class="price">$<span>99</span>/mo</p>
+            <p class="text--plan"><i class='bx bx-check'></i>15 users</p>
+            <p class="text--plan"><i class='bx bx-check'></i>100 visitors/month</p>
+            <p class="text--plan"><i class='bx bx-check'></i>1 website</p>
+            <p class="text--plan"><i class='bx bx-check'></i>24x7 support</p>
+            <p class="text--plan"><i class='bx bx-check'></i>third party integration</p>
+            <button class="signup signup--pro" type="button">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section--testimonials section">
+      <div class="container">
+        <!-- <h2 class="section--title">Testimonials</h2> -->
+        <ul class="slider2 slider--testimonials">
+          <li>
+            <div class="box--testimonials">
+              <blockquote>
+                <i class='bx bxs-quote-left'></i>
+                <p class="testimonial">Lorem ipsum dolor set abstrat ecma subtra cintro sit amet consectetur adipisicing elit. Soluta aed pareum minus, porro error voluptatem id praesentium.</p>
+              </blockquote>
+              <div class="person">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="a person">
+                <div class="personal--infos">
+                  <span class="name">Joanne Bennet</span>
+                  <span class="job">Designer</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box--testimonials">
+              <blockquote>
+                <i class='bx bxs-quote-left'></i>
+                <p class="testimonial">Lorem ipsum dolor set abstrat ecma subtra cintro sit amet consectetur adipisicing elit. Soluta aed pareum minus, porro error voluptatem id praesentium.</p>
+              </blockquote>
+              <div class="person">
+                <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="a person">
+                <div class="personal--infos">
+                  <span class="name">Matthew Stewart</span>
+                  <span class="job">Dev Backend</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box--testimonials">
+              <blockquote>
+                <i class='bx bxs-quote-left'></i>
+                <p class="testimonial">Lorem ipsum dolor set abstrat ecma subtra cintro sit amet consectetur adipisicing elit. Soluta aed pareum minus, porro error voluptatem id praesentium.</p>
+              </blockquote>
+              <div class="person">
+                <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="a person">
+                <div class="personal--infos">
+                  <span class="name">Landon Collins</span>
+                  <span class="job">IT Manager</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box--testimonials">
+              <blockquote>
+                <i class='bx bxs-quote-left'></i>
+                <p class="testimonial">Lorem ipsum dolor set abstrat ecma subtra cintro sit amet consectetur adipisicing elit. Soluta aed pareum minus, porro error voluptatem id praesentium.</p>
+              </blockquote>
+              <div class="person">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="a person">
+                <div class="personal--infos">
+                  <span class="name">Christine Richard</span>
+                  <span class="job">General Manager</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box--testimonials">
+              <blockquote>
+                <i class='bx bxs-quote-left'></i>
+                <p class="testimonial">Lorem ipsum dolor set abstrat ecma subtra cintro sit amet consectetur adipisicing elit. Soluta aed pareum minus, porro error voluptatem id praesentium.</p>
+              </blockquote>
+              <div class="person">
+                <img src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk4fHxwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="a person">
+                <div class="personal--infos">
+                  <span class="name">Robert Aldrige</span>
+                  <span class="job">Entrepreneur</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box--testimonials">
+              <blockquote>
+                <i class='bx bxs-quote-left'></i>
+                <p class="testimonial">Lorem ipsum dolor set abstrat ecma subtra cintro sit amet consectetur adipisicing elit. Soluta aed pareum minus, porro error voluptatem id praesentium.</p>
+              </blockquote>
+              <div class="person">
+                <img src="https://images.unsplash.com/photo-1614880353165-e56fac2ea9a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="a person">
+                <div class="personal--infos">
+                  <span class="name">Beck Muller</span>
+                  <span class="job">Dev Frontend</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <!-- CONTACT US SECTION -->
+    <section id="contactus" class="section--contact section">
+      <div class="container">
+        <h2 class="section--title">CONTACT</h2>
+        <div class="box--contact">
+          <div class="our--contacts">
+            <div class="contact">
+              <i class='bx bxs-map'></i>
+              <h3>OUR MAIN OFFICE</h3>
+              <p>SoHo 94 Broadway <br>St New York, NY 1001</p>
+            </div>
+            <div class="contact">
+              <i class='bx bxs-phone'></i>
+              <h3>PHONE NUMBER</h3>
+              <p>234-9876-5400 <br>888-0123-4567 (Toll Free)</p>
+            </div>
+            <div class="contact">
+              <i class='bx bxs-printer'></i>
+              <h3>FAX</h3>
+              <p>1-234-567-8900</p>
+            </div>
+            <div class="contact">
+              <i class='bx bxs-envelope'></i>
+              <h3>EMAIL</h3>
+              <p><a href="mailto:logoipsum@theme.com">logoipsum@theme.com</a></p>
+            </div>
+          </div>
+          <div class="div--contactus">
+            <h2>CONTACT US</h2>
+            <form class="form-contactus" action="submit">
+              <input type="text" placeholder="Enter your name..." required>
+              <input type="text" placeholder="Enter a valid email address..." required>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="div-text">
+        <p class="footer-text">Soluta voluptate et optio. Eos quasi impedit sapiente aliquid eius eligendi at. Necessitatibus magni et sed quod quas minima.</p>
+        <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque fugiat at! Eaque similique maxime optio facilis quam, id quo quis sunt magni cupiditate, beatae laudantium voluptas iure ducimus vero!</p>
+      </div>
+      <div class="div-links">
+        <div class="box-links">
+          <h5 class="head-links">Company</h5>
+          <ul class="list-links">
+            <li class="item-link"><a href="#" class="foot-link">About Us</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Jobs</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Contact</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Media</a></li>
+          </ul>
+        </div>
+        <div class="box-links">
+          <h5 class="head-links">Product</h5>
+          <ul class="list-links">
+            <li class="item-link"><a href="#" class="foot-link">About Us</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Jobs</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Contact</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Media</a></li>
+          </ul>
+        </div>
+        <div class="box-links">
+          <h5 class="head-links">Support</h5>
+          <ul class="list-links">
+            <li class="item-link"><a href="#" class="foot-link">About Us</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Jobs</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Contact</a></li>
+            <li class="item-link"><a href="#" class="foot-link">Media</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="div-social-media">
+        <form class="foot-form" action="submit">
+          <input class="foot-input" placeholder="Email address" type="text">
+          <button class="foot-btn" type="submit">Start</button>
+        </form>
+        <div class="box-social-media">
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+      </div>
+      <p class="rights">Some rights reserved. &copy</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
